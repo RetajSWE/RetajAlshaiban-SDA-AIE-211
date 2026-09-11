@@ -1,17 +1,18 @@
 # BENCHMARKS
 
-> Results reported below are from the project runs performed for this repository. Missing values are marked as N/A rather than using course reference numbers.
+> Fill these tables from **your own runs**. Do not copy course reference numbers.
 
 ## Lab 1 — Tokenizer audit
-| Tokenizer | AR fertility | EN fertility | AR p95 len | EN p95 len | AR UNK rate |
-|---|---:|---:|---:|---:|---:|
-| mBERT | N/A | N/A | N/A | N/A | N/A |
-| XLM-R | N/A | N/A | N/A | N/A | N/A |
-| CAMeLBERT | N/A | N/A | N/A | N/A | N/A |
-| DistilBERT | N/A | N/A | N/A | N/A | N/A |
 
-- Golden preprocessing: N/A / 25 passed
-- PII masking recall: N/A / 60
+| Tokenizer  | AR fertility | EN fertility | AR p95 len | EN p95 len |  AR UNK rate |
+| ---------- | -----------: | -----------: | ---------: | ---------: | -----------: |
+| mBERT      |         2.15 |         1.51 |         27 |         25 | **--------** |
+| XLM-R      |         1.67 |         1.43 |         21 |         23 | **--------** |
+| CAMeLBERT  |         1.41 |         2.70 |         20 |         38 | **--------** |
+| DistilBERT |         4.53 |         1.30 |         47 |         21 | **--------** |
+
+- Golden preprocessing: 8 / 25 passed
+- PII masking recall: 60 / 60 = 100%
 
 ## Lab 3 — Models
 | Model | Metric | Validation | Frozen test | Train time |
